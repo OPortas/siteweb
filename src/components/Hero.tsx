@@ -81,8 +81,9 @@ export function Hero() {
           >
             <div className="flex items-center justify-center gap-2 mb-4">
               <Clock className="w-5 h-5 text-primary" />
-              <h2 className="text-xl font-serif text-primary">
-                {language === "en" ? "Opening Hours" : "Horário"}
+              <h2 className="text-xl text-primary">
+                {language === "en" ? "Opening Hours" : ""}
+                {language === "pt" ? "Horário" : ""}
               </h2>
             </div>
             <div className="space-y-2 text-gray-100">
