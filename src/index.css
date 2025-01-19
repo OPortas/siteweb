@@ -7,6 +7,7 @@
   .animate-fade-up {
     animation: fade-up 0.8s ease-out forwards;
     opacity: 0;
+    will-change: transform, opacity;
   }
 
   .animate-fade-in {
@@ -29,7 +30,7 @@
 
 @keyframes fade-up {
   from {
-    opacity: 0;
+    opacity: 0.01;
     transform: translateY(20px);
   }
   to {
